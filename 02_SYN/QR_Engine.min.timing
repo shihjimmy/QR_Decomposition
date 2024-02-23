@@ -1,0 +1,709 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : QR_Engine
+Version: U-2022.12
+Date   : Tue Dec 19 06:01:55 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: inside_ctr_reg[5]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: inside_ctr_reg[5]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  inside_ctr_reg[5]/CK (DFFRX4)            0.00 #     0.00 r
+  inside_ctr_reg[5]/QN (DFFRX4)            0.31       0.31 r
+  U5766/Y (AOI211X1)                       0.15       0.46 f
+  inside_ctr_reg[5]/D (DFFRX4)             0.00       0.46 f
+  data arrival time                                   0.46
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  inside_ctr_reg[5]/CK (DFFRX4)            0.00       0.10 r
+  library hold time                        0.02       0.12
+  data required time                                  0.12
+  -----------------------------------------------------------
+  data required time                                  0.12
+  data arrival time                                  -0.46
+  -----------------------------------------------------------
+  slack (MET)                                         0.33
+
+
+  Startpoint: Q_regfile_reg[3][35]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: Q_regfile_reg[3][35]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Q_regfile_reg[3][35]/CK (DFFRHQX4)       0.00 #     0.00 r
+  Q_regfile_reg[3][35]/Q (DFFRHQX4)        0.24       0.24 r
+  U6011/Y (CLKMX2X2)                       0.21       0.45 r
+  Q_regfile_reg[3][35]/D (DFFRHQX4)        0.00       0.45 r
+  data arrival time                                   0.45
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  Q_regfile_reg[3][35]/CK (DFFRHQX4)       0.00       0.10 r
+  library hold time                       -0.03       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.37
+
+
+  Startpoint: DV3/U0/U1/U_DIV/i_clk_r_REG44_S3
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: DV3/U0/U1/U_DIV/i_clk_r_REG44_S3
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DV3/U0/U1/U_DIV/i_clk_r_REG44_S3/CK (DFFRX2)            0.00 #     0.00 r
+  DV3/U0/U1/U_DIV/i_clk_r_REG44_S3/QN (DFFRX2)            0.39       0.39 r
+  DV3/U0/U1/U14/Y (OAI22X2)                               0.12       0.51 f
+  DV3/U0/U1/U_DIV/i_clk_r_REG44_S3/D (DFFRX2)             0.00       0.51 f
+  data arrival time                                                  0.51
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DV3/U0/U1/U_DIV/i_clk_r_REG44_S3/CK (DFFRX2)            0.00       0.10 r
+  library hold time                                       0.00       0.10
+  data required time                                                 0.10
+  --------------------------------------------------------------------------
+  data required time                                                 0.10
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: DV3/U0/U1/U_DIV/i_clk_r_REG41_S3
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: DV3/U0/U1/U_DIV/i_clk_r_REG41_S3
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DV3/U0/U1/U_DIV/i_clk_r_REG41_S3/CK (DFFRX2)            0.00 #     0.00 r
+  DV3/U0/U1/U_DIV/i_clk_r_REG41_S3/QN (DFFRX2)            0.39       0.39 r
+  DV3/U0/U1/U570/Y (OAI22X2)                              0.12       0.51 f
+  DV3/U0/U1/U_DIV/i_clk_r_REG41_S3/D (DFFRX2)             0.00       0.51 f
+  data arrival time                                                  0.51
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DV3/U0/U1/U_DIV/i_clk_r_REG41_S3/CK (DFFRX2)            0.00       0.10 r
+  library hold time                                       0.00       0.10
+  data required time                                                 0.10
+  --------------------------------------------------------------------------
+  data required time                                                 0.10
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG47_S3
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG47_S3
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG47_S3/CK (DFFRX2)
+                                                          0.00 #     0.00 r
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG47_S3/QN (DFFRX2)
+                                                          0.39       0.39 r
+  DV3/U0/U1/U13/Y (OAI22X2)                               0.13       0.52 f
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG47_S3/D (DFFRX2)
+                                                          0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG47_S3/CK (DFFRX2)
+                                                          0.00       0.10 r
+  library hold time                                       0.00       0.10
+  data required time                                                 0.10
+  --------------------------------------------------------------------------
+  data required time                                                 0.10
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG49_S3
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG49_S3
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG49_S3/CK (DFFRX2)
+                                                          0.00 #     0.00 r
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG49_S3/QN (DFFRX2)
+                                                          0.39       0.39 r
+  DV3/U0/U1/U12/Y (OAI22X2)                               0.13       0.52 f
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG49_S3/D (DFFRX2)
+                                                          0.00       0.52 f
+  data arrival time                                                  0.52
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_2/i_clk_r_REG49_S3/CK (DFFRX2)
+                                                          0.00       0.10 r
+  library hold time                                       0.00       0.10
+  data required time                                                 0.10
+  --------------------------------------------------------------------------
+  data required time                                                 0.10
+  data arrival time                                                 -0.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: DV3/U0/U1/U_DIV/i_clk_r_REG17_S4
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: DV3/U0/U1/U_DIV/i_clk_r_REG17_S4
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DV3/U0/U1/U_DIV/i_clk_r_REG17_S4/CK (DFFSX2)            0.00 #     0.00 r
+  DV3/U0/U1/U_DIV/i_clk_r_REG17_S4/QN (DFFSX2)            0.38       0.38 r
+  DV3/U0/U1/U893/Y (OAI2BB2X1)                            0.15       0.53 f
+  DV3/U0/U1/U_DIV/i_clk_r_REG17_S4/D (DFFSX2)             0.00       0.53 f
+  data arrival time                                                  0.53
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DV3/U0/U1/U_DIV/i_clk_r_REG17_S4/CK (DFFSX2)            0.00       0.10 r
+  library hold time                                       0.00       0.10
+  data required time                                                 0.10
+  --------------------------------------------------------------------------
+  data required time                                                 0.10
+  data arrival time                                                 -0.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: HY_regfile_reg[3][0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[3][0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[3][0]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[3][0]/QN (DFFRX4)         0.35       0.35 r
+  U5625/Y (OAI22XL)                        0.20       0.55 f
+  HY_regfile_reg[3][0]/D (DFFRX4)          0.00       0.55 f
+  data arrival time                                   0.55
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[3][0]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.55
+  -----------------------------------------------------------
+  slack (MET)                                         0.44
+
+
+  Startpoint: SQRT1/U1/U_SQRT/i_clk_r_REG128_S1
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: SQRT1/U1/U_SQRT/i_clk_r_REG128_S1
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  SQRT1/U1/U_SQRT/i_clk_r_REG128_S1/CK (DFFRX4)           0.00 #     0.00 r
+  SQRT1/U1/U_SQRT/i_clk_r_REG128_S1/QN (DFFRX4)           0.40       0.40 r
+  SQRT1/U1/U885/Y (AOI2BB2X1)                             0.17       0.57 f
+  SQRT1/U1/U_SQRT/i_clk_r_REG128_S1/D (DFFRX4)            0.00       0.57 f
+  data arrival time                                                  0.57
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  SQRT1/U1/U_SQRT/i_clk_r_REG128_S1/CK (DFFRX4)           0.00       0.10 r
+  library hold time                                       0.02       0.12
+  data required time                                                 0.12
+  --------------------------------------------------------------------------
+  data required time                                                 0.12
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: HY_regfile_reg[2][0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[2][0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[2][0]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[2][0]/QN (DFFRX4)         0.33       0.33 r
+  U5464/Y (OAI22XL)                        0.23       0.55 f
+  HY_regfile_reg[2][0]/D (DFFRX4)          0.00       0.55 f
+  data arrival time                                   0.55
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[2][0]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.55
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: HY_regfile_reg[2][1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[2][1]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[2][1]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[2][1]/QN (DFFRX4)         0.33       0.33 r
+  U5465/Y (OAI22XL)                        0.23       0.55 f
+  HY_regfile_reg[2][1]/D (DFFRX4)          0.00       0.55 f
+  data arrival time                                   0.55
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[2][1]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.55
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: HY_regfile_reg[3][1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[3][1]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[3][1]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[3][1]/QN (DFFRX4)         0.35       0.35 r
+  U5626/Y (OAI22XL)                        0.20       0.55 f
+  HY_regfile_reg[3][1]/D (DFFRX4)          0.00       0.55 f
+  data arrival time                                   0.55
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[3][1]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.55
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: HY_regfile_reg[3][5]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[3][5]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[3][5]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[3][5]/QN (DFFRX4)         0.35       0.35 r
+  U2775/Y (OAI21XL)                        0.21       0.56 f
+  HY_regfile_reg[3][5]/D (DFFRX4)          0.00       0.56 f
+  data arrival time                                   0.56
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[3][5]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.56
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: HY_regfile_reg[3][4]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[3][4]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[3][4]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[3][4]/QN (DFFRX4)         0.35       0.35 r
+  U2089/Y (OAI21XL)                        0.21       0.56 f
+  HY_regfile_reg[3][4]/D (DFFRX4)          0.00       0.56 f
+  data arrival time                                   0.56
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[3][4]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.56
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: HY_regfile_reg[3][3]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[3][3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[3][3]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[3][3]/QN (DFFRX4)         0.35       0.35 r
+  U5628/Y (OAI22XL)                        0.20       0.56 f
+  HY_regfile_reg[3][3]/D (DFFRX4)          0.00       0.56 f
+  data arrival time                                   0.56
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[3][3]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.56
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: HY_regfile_reg[2][2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[2][2]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[2][2]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[2][2]/QN (DFFRX4)         0.33       0.33 r
+  U5466/Y (OAI22XL)                        0.23       0.56 f
+  HY_regfile_reg[2][2]/D (DFFRX4)          0.00       0.56 f
+  data arrival time                                   0.56
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[2][2]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.56
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: HY_regfile_reg[2][3]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: HY_regfile_reg[2][3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  HY_regfile_reg[2][3]/CK (DFFRX4)         0.00 #     0.00 r
+  HY_regfile_reg[2][3]/QN (DFFRX4)         0.33       0.33 r
+  U5438/Y (OAI22XL)                        0.23       0.56 f
+  HY_regfile_reg[2][3]/D (DFFRX4)          0.00       0.56 f
+  data arrival time                                   0.56
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  HY_regfile_reg[2][3]/CK (DFFRX4)         0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.56
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: inside_ctr_reg[6]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: inside_ctr_reg[6]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  inside_ctr_reg[6]/CK (DFFRX4)            0.00 #     0.00 r
+  inside_ctr_reg[6]/QN (DFFRX4)            0.35       0.35 r
+  U2778/Y (AOI211XL)                       0.22       0.57 f
+  inside_ctr_reg[6]/D (DFFRX4)             0.00       0.57 f
+  data arrival time                                   0.57
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  inside_ctr_reg[6]/CK (DFFRX4)            0.00       0.10 r
+  library hold time                        0.01       0.11
+  data required time                                  0.11
+  -----------------------------------------------------------
+  data required time                                  0.11
+  data arrival time                                  -0.57
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: inside_ctr_reg[4]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: inside_ctr_reg[4]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  inside_ctr_reg[4]/CK (DFFRX4)            0.00 #     0.00 r
+  inside_ctr_reg[4]/QN (DFFRX4)            0.39       0.39 r
+  U5767/Y (AOI211X1)                       0.18       0.58 f
+  inside_ctr_reg[4]/D (DFFRX4)             0.00       0.58 f
+  data arrival time                                   0.58
+
+  clock i_clk (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  inside_ctr_reg[4]/CK (DFFRX4)            0.00       0.10 r
+  library hold time                        0.02       0.12
+  data required time                                  0.12
+  -----------------------------------------------------------
+  data required time                                  0.12
+  data arrival time                                  -0.58
+  -----------------------------------------------------------
+  slack (MET)                                         0.45
+
+
+  Startpoint: DV3/U0/U1/U_DIV/u_add_PartRem_2_4_3/i_clk_r_REG37_S3
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: DV3/U0/U1/U_DIV/u_add_PartRem_2_4_3/i_clk_r_REG37_S3
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  QR_Engine          tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_3/i_clk_r_REG37_S3/CK (DFFRX4)
+                                                          0.00 #     0.00 r
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_3/i_clk_r_REG37_S3/Q (DFFRX4)
+                                                          0.45       0.45 f
+  DV3/U0/U1/U1450/Y (OAI2BB1X4)                           0.15       0.60 f
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_3/i_clk_r_REG37_S3/D (DFFRX4)
+                                                          0.00       0.60 f
+  data arrival time                                                  0.60
+
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DV3/U0/U1/U_DIV/u_add_PartRem_2_4_3/i_clk_r_REG37_S3/CK (DFFRX4)
+                                                          0.00       0.10 r
+  library hold time                                       0.03       0.13
+  data required time                                                 0.13
+  --------------------------------------------------------------------------
+  data required time                                                 0.13
+  data arrival time                                                 -0.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+1
