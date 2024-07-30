@@ -1,4 +1,4 @@
-# QR Decomposition and 5G MIMO Demodulation
+# QR Decomposition
 ## Final Project from Computer-aided VLSI System Design
 ### Overview
 - **Objective:** Implement a simple MIMO receiver to demodulate RX data in a 5G MIMO system using QR decomposition.
