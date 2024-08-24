@@ -1,7 +1,7 @@
 # QR Decomposition
 ## Final Project from Computer-aided VLSI System Design
 - We design a robust QR decomposition chip from frontend to backend
-- Our chip design reaches IC-design engineer level in TA's ranking
+- Our performance evaluation reaches IC-design engineer level in TA's ranking
 - Please check out the 1121_Final_introduction.pdf to get full information and ranking details
 - Our implementation details are recorded in reports/team11_report.pdf
 
