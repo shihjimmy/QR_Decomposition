@@ -13,3 +13,5 @@
 - Post layout area: 336312.65 (um^2)
 - Post layout total power: 24.3 (mW)
 - Status of LVS check: pass
+
+![image](./layout_result.jpg)
